@@ -1,0 +1,462 @@
+.forms-main{
+    width:60%;
+}
+.form{
+    height: 400px;
+    width:50%;
+    background-color: white;
+    color:black;
+    padding:30px;
+    margin-top:95px;
+    margin-left:20%;
+    border-radius: 40px;
+    opacity:0.9;
+}
+body{
+    background-image: url("../imgs/30.H5\ Light\ Effect\ Background\ Design.jpeg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+input{
+    outline: none;
+    border:none;
+    width:80%;
+    background-color: lightgray;
+}
+.password, .email{
+    outline: none;
+    border-radius:20px;
+    border:none;
+    padding:12px;
+    background-color: lightgray;
+    
+}
+i{
+    margin-right:10px;
+}
+input[type='submit']{
+    width: 60%;
+    padding:7px;
+    outline: none;
+    border:none;
+    background-color:rgb(16, 196, 16);
+    color:white;
+    margin-top: 20px;
+    margin-left:20%;
+    border-radius:20px;
+    cursor: pointer;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+p{
+    margin:30px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    padding-bottom:6px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input[type='submit']:hover{
+    transition: 0.3s;
+    color:black;
+}
+.cards{
+    width: 40.5%;
+    overflow: hidden;
+    margin-right:15%;
+}
+.slider{
+    top:20%;
+    width:2400px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    animation-duration: 20s;
+    animation-name: card;
+    animation-iteration-count: infinite;
+    }
+    #img1{
+        background-color: peru;
+    }
+    #img2{
+        background-color: plum;
+    }
+    #img3{
+        background-color: peachpuff;
+    }
+    #img4{
+        background-color:skyblue;
+    }
+    .slider p{
+        text-align: left;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: large;
+        margin-bottom:50px;
+        margin-left:50px;
+    }
+@keyframes card{
+    0%{
+        left:0px;
+    }
+    20%{
+        left:0px;
+    }
+    25%{
+        left:-570px;
+    }
+    45%{
+        left:-570px;
+    }
+    50%{
+        left:-1100px;
+    }
+    70%{
+        left:-1150px;
+    }
+    75%{
+        left:-1720px;
+    }
+    95%{
+        left:-1720px;
+    }
+100%{
+left:-2400px;
+}
+}
+@media(max-width:1200px){
+    .forms-main{
+        width:50%;
+    }
+    .form{
+        height: 400px;
+        width:70%;
+        background-color: white;
+        color:black;
+        padding:30px;
+        margin-top:95px;
+        margin-left:10%;
+        border-radius: 40px;
+        opacity:0.9;
+    }
+    body{
+        background-image: url("../imgs/30.H5\ Light\ Effect\ Background\ Design.jpeg");
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position: right;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    input{
+        outline: none;
+        border:none;
+        width:80%;
+        background-color: lightgray;
+    }
+    .password, .email{
+        outline: none;
+        border-radius:20px;
+        border:none;
+        padding:12px;
+        background-color: lightgray;
+        
+    }
+    i{
+        margin-right:10px;
+    }
+    input[type='submit']{
+        width: 60%;
+        padding:7px;
+        outline: none;
+        border:none;
+        background-color:rgb(16, 196, 16);
+        color:white;
+        margin-top: 20px;
+        margin-left:20%;
+        border-radius:20px;
+        cursor: pointer;
+        font-size:20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    p{
+        margin:30px;
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+        padding-bottom:6px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    input[type='submit']:hover{
+        transition: 0.3s;
+        color:black;
+    }
+    .cards{
+        width: 50%;
+        overflow: hidden;
+        margin-right:10%;
+    }
+    .slider{
+        top:20%;
+        width:2400px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        animation-duration: 20s;
+        animation-name: card;
+        animation-iteration-count: infinite;
+        }
+        #img1{
+            background-color: peru;
+        }
+        #img2{
+            background-color: plum;
+        }
+        #img3{
+            background-color: peachpuff;
+        }
+        #img4{
+            background-color:skyblue;
+        }
+        .slider p{
+            text-align: left;
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom:50px;
+            margin-left:16px;
+        }
+        #img4 p{
+            margin-left:40px;
+        }
+    @keyframes card{
+        0%{
+            left:0px;
+        }
+        20%{
+            left:0px;
+        }
+        25%{
+            left:-570px;
+        }
+        45%{
+            left:-570px;
+        }
+        50%{
+            left:-1100px;
+        }
+        70%{
+            left:-1150px;
+        }
+        75%{
+            left:-1720px;
+        }
+        95%{
+            left:-1720px;
+        }
+    100%{
+    left:-2400px;
+    }
+    
+}
+@media(max-width: 900px){
+    .forms-main{
+    width:50%;
+}
+.form{
+    height: 420px;
+    width:70%;
+    background-color: white;
+    color:black;
+    padding:30px;
+    margin-top:80px;
+    margin-left:20px;
+    border-radius: 40px;
+}
+input{
+    outline: none;
+    border:none;
+    width:100%;
+    background-color: lightgray;
+}
+.password, .email{
+    outline: none;
+    border-radius:20px;
+    border:none;
+    padding:12px;
+    background-color: lightgray;
+    
+}
+i{
+    margin-right:10px;
+    margin-bottom:10px;
+}
+input[type='submit']{
+    width: 60%;
+    padding:7px;
+    outline: none;
+    border:none;
+    background-color:rgb(16, 196, 16);
+    color:white;
+    margin-top: 20px;
+    border-radius:20px;
+    margin-left:20%;
+    cursor: pointer;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+    padding-bottom:6px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input[type='submit']:hover{
+    transition: 0.3s;
+    color:black;
+}
+.cards{
+    width: 54%;
+    overflow: hidden;
+    margin:unset;
+}
+.slider{
+    top:15%;
+    width:2400px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    animation-duration: 20s;
+    animation-name: card;
+    animation-iteration-count: infinite;
+    }
+    #img1{
+        background-color: peru;
+    }
+    #img2{
+        background-color: plum;
+    }
+    #img3{
+        background-color: peachpuff;
+    }
+    #img4{
+        background-color:skyblue;
+    }
+    
+    .slider p{
+        margin-left:8px;
+        font-size:18px;
+        text-align:left;
+
+        font-weight: bold;
+    }
+    #img4 p{
+    margin-left:40px;
+    }
+@keyframes card{
+    0%{
+        left:0px;
+    }
+    20%{
+        left:0px;
+    }
+    25%{
+        left:-570px;
+    }
+    45%{
+        left:-570px;
+    }
+    50%{
+        left:-1100px;
+    }
+    70%{
+        left:-1150px;
+    }
+    75%{
+        left:-1720px;
+    }
+    95%{
+        left:-1720px;
+    }
+100%{
+left:-2400px;
+}
+}
+@media(max-width:700px){
+    .forms-main{
+    width:100%;
+}
+.form{
+    height: 430px;
+    width:60%;
+    background-color: white;
+    color:black;
+    padding:30px;
+    margin:auto;
+    margin-top:80px;
+    border-radius: 40px;
+}
+input{
+    outline: none;
+    border:none;
+    width:90%;
+    background-color: lightgray;
+}
+.password, .email{
+    outline: none;
+    border-radius:20px;
+    border:none;
+    padding:12px;
+    background-color: lightgray;
+    
+}
+i{
+    margin-right:10px;
+    margin-bottom: 10px;
+}
+input[type='submit']{
+    width: 60%;
+    padding:7px;
+    outline: none;
+    border:none;
+    background-color:rgb(16, 196, 16);
+    color:white;
+    margin-left: 20%;
+    margin-top: 20px;
+    border-radius:20px;
+    cursor: pointer;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+    padding-bottom:6px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input[type='submit']:hover{
+    transition: 0.3s;
+    color:black;
+}
+.slider{
+    display: none;
+}
+.cards{
+    display: none;
+}
+}
+@media (max-width:400px) {
+    .form{
+        height:500px;
+        margin-top: 30px;
+        width:75%;
+    }
+}
