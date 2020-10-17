@@ -20,6 +20,7 @@ body{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    overflow: hidden;
 }
 input{
     outline: none;
@@ -72,7 +73,7 @@ input[type='submit']:hover{
     margin-right:15%;
 }
 .slider{
-    top:20%;
+    top:95px;
     width:2400px;
     position: relative;
     display: flex;
