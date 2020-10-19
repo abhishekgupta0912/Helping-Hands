@@ -1,323 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--first give the title of ngo website-->
-<title>HELP NGO WEBSITE</title>
-<!--link your style  file with ur index file-->
-<link rel="stylesheet" href="main.css">
-<!--link bootstrap css link with your html file-->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<!--link font awesome with your index page-->
-<!--this font awesome is basically for using diffrent icons on webpage-->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Helping Hands</title>
 </head>
 <body>
-    <!--starting of navigation bar-->
-    <!--make a section for ur navigation bar-->
-<section id="navbar">
-    <!--used this class to add a navbar for full length and having light background-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <!--add ngologo at the side of navbar-->
-        <a class="navbar-brand" href="#"><img src="images\2222.jpg"></a>
-        <!--just add responsiveness to your site by uding this class-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <!--add a icon to your menu bar-->
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <!--just align the data at the right hand side by adding ml auto-->
-          <ul class="navbar-nav ml-auto">
-              <!--start making navbar list by using class nav-list-->
-            <li class="nav-item">
-                <!--add each and every item of your navbar by using class of bootstrap nav-link-->
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#About">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Project</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#Inspiration">Inspiration</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact Us</a>
-              </li>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero"><h1><span>H</span>elping <span>H</span>ands</h1></a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Service">inspiration</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="src/get_in_touch.html" data-after="About">contact Us</a></li>
           </ul>
         </div>
-      </nav>
-</section>
-<!--end of navigation bar-->
-<!--starting of slider part of your website-->
-    <div id="slider">
-        <!--class carousel slide is used to add a slider in your website-->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!--just make a ordinary list for the number of images that you want to add in your slider part-->
-            <!--indicators-->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <!--after making target images just close the ordinary list part-->
-            <!--and use carousel-inner class to make a frame of images in which you want to add multiple image-->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images\banner11.jpg" class="d-block w-100">
-                <!--add this div to write something on the image-->
-                <div class="carousel-caption">
-                    <h5>Alone we can do so little together we can do so much</h5>
-                </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images\banner22.jpg" class="d-block w-100">
-                 <!--add this div to write something on the image-->
-                 <div class="carousel-caption">
-                    <h5>Only by giving are you able to receive more than you already have</h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images\banner3.jpg" class="d-block w-100">
-                 <!--add this div to write something on the image-->
-                 <div class="carousel-caption">
-                    <h5>It’s not how much we give, but how much love we put into giving.</h5>
-                </div>
-              </div>
-              </div>
-            <!--add this class to control previous images also-->
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" area-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-            <!--add this class to control the next images-->
-            <a class="carousel-control-next" href="#myCarousel"role="button" data-slide="next">
-                <span class="carousel-control-next-icon" area-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-        </div>
-        </div>
-<!--ending of slider part-->
-<!--starting of about section-->
-<!--add a section for making about part-->
-<section id="About">
-    <!--add one container for about section-->
-    <div class="container">
-        <!--add a row by using  row class-->
-        <div class="row">
-            <!--add column by using col-md-6 class-->
-            <div class="col-md-12">
-                <!--give heading -->
-                <h2>About us</h2>
-                <!--add a class for the content-->
-                <div class="about-content">
-                    Poverty and hunger are the main problem of our country. There are many NGO’s or Organizations that
-                    are working to minimize poverty and hunger in society. These organizations take donations for this 
-                    purpose and arrange fund raising events/ processes so that everyone can donate anything. This project
-                    will build an efficient management system for such organizations to manage their resources and donations.
-                    The NGO have following features for donation management system.
-                    The system should have a user registration processand this registration will be for two perspectives
-                    For those who want to donate.
-                    For those who want to volunteer
-                    The user can make an online donation.
-                    The system should send a confirmation msg to the donor after successful donation.
-                    User can donate tangible things also.
-                    The system should allow the donation at organization level also.
-                    The system can import online donations and donor records from the website.
-                    The system can track fundraising campaigns and donations.
-                </div>
-                <!--add button by using class btn-btn-primary-->
-                <button type="button" class="btn btn-primary">Read More>></button>
-            </div>
-        </div>
+      </div>
     </div>
-</section>
-<!--ending of about section-->
-<!--starting of project section-->
-<!--create a section for your project part and give id to it-->
-<section id="projects">
-    <!--create a contaner for your project part-->
-    <div class="container">
-        <h1>Our Projects</h1>
-        <!--make a row-->
-        <div class="row">
-            <!--add columns-->
-            <div class="col-md-3 text-centre">
-                <!--add icon by using awesome fonts-->
-                <div class="icon">
-                    <i class="fa fa-heart"></i>
-                </div>
-                <h3>Spread Love</h3>
-                <p>We have always been taught that “sharing is caring.” Sharing is spreading joy amongst others.
-                    Sharing is when you become selfless and help others or share something with others.
-                    Sharing makes a person build social-skills which are required by a well-adjusted adult.
-                    The selfless attitude one develops by sharing is always appreciated by others.
-                   </p>
-            </div>
-            <!--end of first column-->
-            <!--strating of second column-->
-            <div class="col-md-3 text-centre">
-                <!--add icon by using awesome fonts-->
-                <div class="icon">
-                    <i class="fa fa-tree"></i>
-                </div>
-                <h3>Plant Water Everyday</h3>
-                <p>A people without the knowledge of their past history, origin and culture is like a tree without roots. 
-                    Trees exhale for us so that we can inhale them to stay alive.
-                 Can we ever forget that? Let us love trees with every breath we take until we perish.
-                 One touch of nature makes the whole world kin
-                </p>
-            </div>
-            <!--end of second column-->
-            <!--starting of third column-->
-            <div class="col-md-3 text-centre">
-                <!--add icon by using awesome fonts-->
-                <div class="icon">
-                    <i class="fa fa-money"></i>
-                </div>
-                <h3>Help Someone</h3>
-                <p>Every good act is charity. A man's true wealth hereafter is the good that he does in this world to his fellows.
-                     When we give cheerfully and accept gratefully, everyone is blessed. It's good to be blessed.</p>
-            </div>
-            <!--end of third column-->
-            <!--starting of fourth column-->
-            <div class="col-md-3 text-centre">
-                <!--add icon by using awesome fonts-->
-                <div class="icon">
-                    <i class="fa fa-blind"></i>
-                </div>
-                <h3>A blind person is waiting to cross the road</h3>
-                <p>Just because you are blind, and unable to see my beauty doesn't mean it does not exist.
-                    Death is no more than passing from one room into another. But there's a difference for me, you know.
-                     Because in that other room I shall be able to see.
-                </p>
-            </div>
-            <!--end of fourth column-->
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Small Effort<span></span></h1>
+        <h1>Can Make <span></span></h1>
+        <h1>Big Change <span></span></h1>
+        <a href="src/donate_us.html" type="button" class="cta">DONATE US</a>
+        <h1>Be a part of beautiful world</h1>
+        <a href="#projects" type="button" class="cta">Be a Member</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- inspiration Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">Insp<span>i</span>ration</h1>
+        <p>Volunteers do not necessarily have the  time they just have the beautiful heart</p>
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/heart.png"/></div>
+          <h2>Vision</h2>
+          <p>You fight for what’s right, you set that vision of where we could be—and then you go after it yourself.</p>
         </div>
-        <!--end of a row-->
-    </div>
-    <!--end of container-->
-</section>
-<!--ending of project section-->
-<!--starting of inspirational part-->
-<!--make a section for this part-->
-<section id="Inspiration">
-    <!--make a conatiner for this part-->
-    <div class="container">
-        <h1>Inspiration</h1>
-        <!--add a row-->
-        <div class="row">
-            <!--add a column-->
-            <div class="col-md-3">
-                <div class="single-price">
-                    <div class="price-head">
-                    <h2>Vision</h2>
-                    <p>Ultimately, we believe that Christ transforms lives, and we envision a world where children accept
-                         Him and experience His love.  Everything we do is centered around Christ and giving people an
-                          opportunity to know Him, and we believe this begins with kids!</p>
-                    </div>
-                </div>
-            </div>
-            <!--end of first column-->
-            <!--starting of second column-->
-            <div class="col-md-3">
-                <div class="single-price">
-                    <div class="price-head">
-                    <h2>Mision</h2>
-                    <p>We believe that local leaders have the most impact in their communities,
-                         therefore we are committed to mentoring and empowering them to make a difference.
-                           This mission affects everything we do —  we take care of,
-                             and pouring into villages. </p>
-                    </div>
-                </div>
-            </div>
-            <!--end of second column-->
-            <!--starting of third column-->
-            <div class="col-md-3">
-                <div class="single-price">
-                    <div class="price-head">
-                    <h2>Values</h2>
-                    <p>Treating every child as we would our own
-                        Breaking the cycle of poverty
-                        Solving the complex problems of the poor
-                        Transforming communities and empowering volunteer leaders
-                        beacause we are Transforming Leaders.
-                    </p>
-                    </div>
-                </div>
-            </div>
-            <!--end of third column-->
-            <!--starting of fourth column-->
-            <div class="col-md-3">
-                <div class="single-price">
-                    <div class="price-head">
-                    <h2>Promises</h2>
-                    <p>The Promise is to draw upon multi-disciplinary findings to
-                         inform culture-resonant programmes for the realisation of personal potentials
-                          amongst children and youth from disadvantaged homes.
-                           we promise to spread love
-                    </p>
-                    </div>
-                </div>
-            </div>
-            <!--ending of fourth column-->
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/heart.png"/></div>
+          <h2>Mission</h2>
+          <p>Change depends on ordinary people who have the courage to say,Enough is enough and no more.</p>
         </div>
-    </div>
-</section>
-<!--ending of inspirational part-->
-<!--starting of contact us part-->
-<!--just make a section for contact part-->
-<section id="contact">
-    <!--just create a container for it-->
-    <div class="container">
-        <!--make a row again-->
-        <h1>Contact Us</h1>
-        <div class="row">
-            <!--make a column-->
-            <div class="col-md-6">
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="what's your lovely name">
-                    </div>
-                    <div class="form-group">
-                        <input type="number" class="form-control" placeholder="phone number">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email Id">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control"  row="4" placeholder="Message"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
-                </form>
-            </div>
-            <!--end of first column-->
-            <!--make one more column-->
-            <div class="col-md-6 contact-info">
-                <div class="follow"><b>Address:</b><i class="fa fa-map-marker"></i>XYZ,road,city,INDIA</div>
-                <div class="follow"><b>Phone:</b><i class="fa fa-phone"></i>+1 234567890</div>
-                <div class="follow"><b>Email:</b><i class="fa fa-envelope-o"></i>donor@website.com</div>
-                <div class="follow"><label><b>Get Social:</b></label>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-youtube-play"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                </div>
-            </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/heart.png"/></div>
+          <h2>Values</h2>
+          <p>Let us remember: One book, one pen, one child, and one teacher can change the world.</p>
         </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/heart.png"/></div>
+          <h2>Promises</h2>
+          <p>We try to come alongside people and interact with our supporters so that they feel, we’re with them.</p>
+        </div>
+      </div>
     </div>
-</section>
-<!--ending of contact-us part-->
-<!--starting of footer part-->
-<!--create a section for footer part-->
-<section id="footer">
-    <!--create a container part for it-->
-    <div class="container" >
-        <p>We make a living by what we get<i class="fa fa-heart-o"></i> but we make a life by what we give.</p>
+  </section>
+  <!-- End inspiration Section -->
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Our <span>Projects</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Send Donation</h1>
+            <p>See how can u make a differences in families' lives with just some amout of your love</p>
+          </div>
+          <div class="project-img">
+            <img src="images/charity-donation.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Become volunteers</h1>
+            <p>Our support creates empowered communities in the world</p>
+          </div>
+          <div class="project-img">
+            <img src="images/volunteer.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Save the earth</h1>
+            <p>Do something crazy to raise money for clean water for childrens</p>
+          </div>
+          <div class="project-img">
+            <img src="images/save_earth.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Sharing</h1>
+            <p>Love only grows by sharing. You can only have more for yourself by giving it away to others.</p>
+          </div>
+          <div class="project-img">
+            <img src="images/sharing-1.jpg" alt="img">
+          </div>
+        </div>
+      </div>
     </div>
-</section>
-<!--ending of footer part-->
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="images/about.jpg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>us</span></h1>
+        <h2>We're helping hands on</h2>
+        <p>NGOs are private nonprofit organizations that pursue activities intended to serve the public
+          good. NGOs may provide basic social services, work to relieve suffering, promote the
+          interests of the poor, bring citizen concerns to governments, encourage political participation,
+          protect the environment, or undertake community development to serve the needs of citizens,
+          organizations, or groups in one or more of the communities that the NGO operates. An NGO
+          can be any nonprofit organization that is independent from government.
+          NGOs can range from large regional, national, or international charities to community-based
+          self-help groups. NGOs also include research institutes, churches, professional associations,
+          and lobby groups. NGOs typically depend, in whole or in part, on charitable donations and
+          voluntary service for support. </p>
+        <a href="#" class="cta">Read More</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand"><h1><span>H</span>elp <span>W</span>orld</h1></div>
+      <h2>Alone we can do so little but together we can do so much</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png"/></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Footer -->
 </body>
 </html>
