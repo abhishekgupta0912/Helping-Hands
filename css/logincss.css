@@ -1,0 +1,450 @@
+.forms-main{
+    width:52%;
+}
+.form{
+    height: 400px;
+    width:60%;
+    background-color: white;
+    color:black;
+    padding:30px;
+    margin-top:95px;
+    margin-left:20%;
+    border-radius: 40px;
+    opacity:0.9;
+}
+body{
+    background-image: url("../images/sunset-sea-blurred.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header h1{
+    border-bottom: 2px solid;
+    border-bottom-color: darkblue;
+    display: inline-block;
+}
+input{
+    outline: none;
+    border:none;
+    width:80%;
+    background-color: lightgray;
+}
+.password, .email{
+    outline: none;
+    border-radius:20px;
+    border:none;
+    padding:12px;
+    background-color: lightgray;
+}
+i{
+    margin-right:10px;
+}
+input[type='submit']{
+    width: 60%;
+    padding:7px;
+    outline: none;
+    border:none;
+    background:linear-gradient(to right, skyblue, darkblue);
+    color:white;
+    margin-top: 20px;
+    margin-left:20%;
+    border-radius:20px;
+    cursor: pointer;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+p{
+    margin:30px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    padding-bottom:6px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input[type='submit']:hover{
+    transition: 0.3s;
+    color:black;
+}
+.cards{
+    width: 540px;
+    overflow: hidden;
+    margin-right:6%;
+}
+.slider{
+    top:95px;
+    width:2400px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    animation-duration: 20s;
+    animation-name: card;
+    animation-iteration-count: infinite;
+    }
+    #img1{
+     
+        background:linear-gradient(to right,pink,red);
+    }
+    #img2{
+        background:linear-gradient(to right,rgb(192, 112, 192),rgb(199, 3, 199));
+    }  
+    #img3{
+        background:linear-gradient(to right,skyblue,darkblue);
+    }
+    #img4{
+        
+        background:linear-gradient(to right,lightgray,gray);
+    }
+    .slider p{
+        text-align: left;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: large;
+        margin-bottom:50px;
+        margin-left:50px;
+    }
+@keyframes card{
+    0%{
+        left:0px;
+    }
+    20%{
+        left:0px;
+    }
+    25%{
+        left:-570px;
+    }
+    45%{
+        left:-570px;
+    }
+    50%{
+        left:-1100px;
+    }
+    70%{
+        left:-1150px;
+    }
+    75%{
+        left:-1720px;
+    }
+    95%{
+        left:-1720px;
+    }
+100%{
+left:-2400px;
+}
+}
+@media(max-width:1200px){
+    .forms-main{
+        width:50%;
+    }
+    .form{
+        height: 400px;
+        width:70%;
+        background-color: white;
+        color:black;
+        padding:30px;
+        margin-top:95px;
+        margin-left:10%;
+        border-radius: 40px;
+        opacity:0.9;
+    }
+    body{
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position: right;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    input{
+        outline: none;
+        border:none;
+        width:80%;
+        background-color: lightgray;
+    }
+    .password, .email{
+        outline: none;
+        border-radius:20px;
+        border:none;
+        padding:12px;
+        background-color: lightgray;
+        
+    }
+    i{
+        margin-right:10px;
+    }
+    input[type='submit']{
+        width: 60%;
+        padding:7px;
+        outline: none;
+        border:none;
+        background-color:rgb(16, 196, 16);
+        color:white;
+        margin-top: 20px;
+        margin-left:20%;
+        border-radius:20px;
+        cursor: pointer;
+        font-size:20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    p{
+        margin:30px;
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+        padding-bottom:6px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    input[type='submit']:hover{
+        transition: 0.3s;
+        color:black;
+    }
+    .cards{
+        width: 560px;
+        overflow: hidden;
+        margin-right:7%;
+    }
+    .slider{
+        top:100px;
+        width:2400px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        animation-duration: 20s;
+        animation-name: card;
+        animation-iteration-count: infinite;
+        }
+        .slider p{
+            text-align: left;
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom:50px;
+            margin-left:16px;
+        }
+        #img4 p{
+            margin-left:40px;
+        }
+    @keyframes card{
+        0%{
+            left:0px;
+        }
+        20%{
+            left:0px;
+        }
+        25%{
+            left:-570px;
+        }
+        45%{
+            left:-570px;
+        }
+        50%{
+            left:-1100px;
+        }
+        70%{
+            left:-1150px;
+        }
+        75%{
+            left:-1720px;
+        }
+        95%{
+            left:-1720px;
+        }
+    100%{
+    left:-2400px;
+    }
+    
+}
+@media(max-width: 900px){
+    .forms-main{
+    width:50%;
+}
+.form{
+    height: 430px;
+    width:84%;
+    background-color: white;
+    color:black;
+    padding:30px;
+    margin-top:80px;
+    margin-left:5px;
+    border-radius: 40px;
+}
+input{
+    outline: none;
+    border:none;
+    width:100%;
+    background-color: lightgray;
+}
+.password, .email{
+    outline: none;
+    border-radius:20px;
+    border:none;
+    padding:12px;
+    background-color: lightgray;
+    
+}
+i{
+    margin-right:10px;
+    margin-bottom:10px;
+}
+input[type='submit']{
+    width: 60%;
+    padding:7px;
+    outline: none;
+    border:none;
+    background-color:rgb(16, 196, 16);
+    color:white;
+    margin-top: 20px;
+    border-radius:20px;
+    margin-left:20%;
+    cursor: pointer;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+    padding-bottom:6px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input[type='submit']:hover{
+    transition: 0.3s;
+    color:black;
+}
+.cards{
+    width: 700px;
+    overflow: hidden;
+    margin:unset;
+    margin-left:7%;
+}
+.slider{
+    top:15%;
+    width:2400px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    animation-duration: 20s;
+    animation-name: card;
+    animation-iteration-count: infinite;
+    }
+
+    .slider p{
+        margin-left:8px;
+        font-size:18px;
+        text-align:left;
+
+        font-weight: bold;
+    }
+    #img4 p{
+    margin-left:40px;
+    }
+@keyframes card{
+    0%{
+        left:0px;
+    }
+    20%{
+        left:0px;
+    }
+    25%{
+        left:-570px;
+    }
+    45%{
+        left:-570px;
+    }
+    50%{
+        left:-1100px;
+    }
+    70%{
+        left:-1150px;
+    }
+    75%{
+        left:-1720px;
+    }
+    95%{
+        left:-1720px;
+    }
+100%{
+left:-2400px;
+}
+}
+@media(max-width:800px){
+    .forms-main{
+    width:100%;
+}
+.form{
+    height: 430px;
+    width:60%;
+    background-color: white;
+    color:black;
+    padding:30px;
+    margin:auto;
+    margin-top:80px;
+    border-radius: 40px;
+}
+input{
+    outline: none;
+    border:none;
+    width:90%;
+    background-color: lightgray;
+}
+.password, .email{
+    outline: none;
+    border-radius:20px;
+    border:none;
+    padding:12px;
+    background-color: lightgray;
+    
+}
+i{
+    margin-right:10px;
+    margin-bottom: 10px;
+}
+input[type='submit']{
+    width: 60%;
+    padding:7px;
+    outline: none;
+    border:none;
+    background-color:rgb(16, 196, 16);
+    color:white;
+    margin-left: 20%;
+    margin-top: 20px;
+    border-radius:20px;
+    cursor: pointer;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+    padding-bottom:6px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input[type='submit']:hover{
+    transition: 0.3s;
+    color:black;
+}
+.slider{
+    display: none;
+}
+.cards{
+    display: none;
+}
+}
+@media (max-width:400px) {
+    .form{
+        height:500px;
+        margin-top: 30px;
+        width:75%;
+    }
+}
