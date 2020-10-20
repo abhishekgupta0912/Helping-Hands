@@ -1,18 +1,13 @@
 .brand h1 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    color: white;
-  }
-  .brand h1 span {
-    color: crimson;
-  }
-  .container {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: white;
+}
+.brand h1 span {
+	color: crimson;
+}
+
+/* Header section */
 #header {
 	position: fixed;
 	z-index: 1000;
@@ -22,7 +17,7 @@
 	height: auto;
 }
 #header .header {
-	min-height: 4vh;
+	min-height: 8vh;
 	background-color: rgba(31, 30, 30, 0.9);
 	transition: .3s ease background-color;
 }
@@ -137,6 +132,7 @@
 #header .hamburger.active .bar::after {
 	top: 0;
 }
+/* End Header section */
 .forms-main{
     width:52%;
 }
@@ -281,28 +277,6 @@ input[type='submit']:hover{
 left:-2400px;
 }
 }
-@media only screen and (min-width: 1200px) {
-    /* header */
-    #header .hamburger {
-      display: none;
-    }
-    #header .nav-list ul {
-      position: initial;
-      display: block;
-      height: auto;
-      width: fit-content;
-      background-color: transparent;
-    }
-    #header .nav-list ul li {
-      display: inline-block;
-    }
-    #header .nav-list ul li a {
-      font-size: 1.8rem;
-    }
-    #header .nav-list ul a:after {
-      display: none;
-    }
-    /* End header */
 @media(max-width:1200px){
     .forms-main{
         width:50%;
