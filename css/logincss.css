@@ -1,7 +1,7 @@
 body{
     padding: 0px;
     margin: 0px;  
-   }  
+ }  
    .brand h1 {
     font-size: 3rem;
     text-transform: uppercase;
@@ -17,7 +17,7 @@ body{
 	left: 0;
 	top: 0;
 	width: 100vw;
-	height: auto;
+	height: 200px;
 }
 #header .header {
 	min-height: 8vh;
