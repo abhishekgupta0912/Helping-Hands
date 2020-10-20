@@ -141,7 +141,7 @@ body{
     background-color: white;
     color:black;
     padding:30px;
-    margin-top:70px;
+    margin-top:95px;
     border-radius: 40px;
     opacity:0.9;
 }
@@ -247,7 +247,7 @@ input[type='submit']:hover{
     background-color: white;
     color:black;
     padding:30px;
-    margin-top:50px;
+    margin-top:95px;
     border-radius: 40px;
 }
 input{
@@ -301,7 +301,7 @@ input[type='submit']:hover{
     color:black;
     padding:30px;
     margin:auto;
-    margin-top:60px;
+    margin-top:95px;
 }
 input{
     outline: none;
@@ -348,8 +348,17 @@ input[type='submit']:hover{
 }
 @media (max-width:400px) {
     .form{
-        height:500px;
-        margin-top: 30px;
+        height:450px;
+        margin-top: 85px;
+        padding-top:2px;
         width:70%;
+        margin-bottom:80px;
+
+    }
+    input[type='submit']{
+        margin-top:3px;
+    }
+    i{
+        margin-bottom:3px;
     }
 }
