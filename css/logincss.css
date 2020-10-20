@@ -7,7 +7,6 @@ body{
     font-size: 1.5rem;
     text-transform: uppercase;
     color: white;
-    border-bottom: none;
   }
   .brand h1 span {
     color: crimson;
@@ -160,15 +159,18 @@ body{
     flex-direction: row;
     overflow: hidden;
 }
-.header{
+.headers{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.header h1{
+.headers h1{
     border-bottom: 2px solid;
     border-bottom-color: darkblue;
     display: inline-block;
+}
+.brand h1{
+    border-bottom: none;
 }
 input{
     outline: none;
