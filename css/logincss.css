@@ -135,6 +135,9 @@ body{
 #header .hamburger.active .bar::after {
 	top: 0;
 }
+.brand h1{
+    text-decoration: none;
+}
 .forms-main{
     width:52%;
 }
@@ -168,9 +171,6 @@ body{
     border-bottom: 2px solid;
     border-bottom-color: darkblue;
     display: inline-block;
-}
-.brand h1{
-    border-bottom: none;
 }
 input{
     outline: none;
