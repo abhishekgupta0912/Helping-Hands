@@ -17,15 +17,28 @@
             </div>
             <div class="nav-list">
               <div class="hamburger"><div class="bar"></div></div>
+<<<<<<< HEAD:src/login.php
+=======
+              <ul>
+                <li><a href="../index.html" data-after="Home">Log Out</a></li>
+>>>>>>> 64b276faa5a12aa90de42ece2a700772933355ef:src/loginpage.html
             </div>
           </div>
         </div>
       </section>
+<<<<<<< HEAD:src/login.php
    
     <div class="forms-main">
     
     <form action="validation.php" class="form" method="POST" >
       
+=======
+    <!-- main container that contains form -->
+    <div class="forms-main">
+        <!-- form container-->
+    <form action="" class="form" >
+        <!-- heading of form-->
+>>>>>>> 64b276faa5a12aa90de42ece2a700772933355ef:src/loginpage.html
         <div class="headers">
         <h1>Member Login</h1>
     </div>
