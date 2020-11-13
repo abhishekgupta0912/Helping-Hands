@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,44 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/logincss.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
-    <title>Login Page</title>
+    <title>Login Helping Hands</title>
 </head>
 <body>
-    <!-- main container that contains form -->
+    <section id="header">
+        <div class="header container">
+          <div class="nav-bar">
+            <div class="brand">
+              <a href="../index.html"><h1><span>H</span>elping <span>H</span>ands</h1></a>
+            </div>
+            <div class="nav-list">
+              <div class="hamburger"><div class="bar"></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+   
     <div class="forms-main">
-        <!-- form container-->
-    <form action="" class="form" >
-        <!-- heading of form-->
-        <div class="header">
+    
+    <form action="validation.php" class="form" method="POST" >
+      
+        <div class="headers">
         <h1>Member Login</h1>
     </div>
         <br>
-        <!--input box that takes username and password-->
+    
         <div class="email">
-            <!--icons of envelope and lock-->
+            
             <i class="fa fa-envelope" aria-hidden="true"></i>
-            <input type="email" id="email" placeholder="Email" >
+            <input type="email" id="email" placeholder="Email" name="email" >
         </div>
         <br><br>
         <div class="password">
             <i class="fa fa-unlock" aria-hidden="true"></i>
-            <input type="password" id="password" placeholder="Password">
+            <input type="password" id="password" placeholder="Password" name="password">
         </div>
         <br><br>
-        <a href="">
-            <span></span>
-        </a>
-        <!--submit button-->
+        <?php 
+session_start();
+if(isset($_SESSION['mail'])){
+  echo " invalid email or password! ";
+  unset($_SESSION['mail']);
+}
+?>
+        
         <input type="submit" value="Login">
         <br><br>
-        <p>Forgot Password? <a href="signup.html">Sign Up</a></p>
+        <p>Forgot Password? <a href="signup.php">Sign Up</a> <br>
+    <a href="adminl.php">Admin Login</a></p>
     </form>
 </div>
-<!--body that contains slider-->
+
 <div class="cards">
-    <!--slider section-->
+   
     <div class="slider">
-        <!-- images and quotes-->
+      
         <div ID="img1">
             <img src="../images/photo-1488521787991-ed7bbaae773c.jpg" alt="">
             <p>"YOU HAVE TWO HANDS, ONE TO HELP OTHERS"</p>

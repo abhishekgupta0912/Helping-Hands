@@ -12,6 +12,7 @@ html {
 a {
 	text-decoration: none;
 }
+
 .container {
 	min-height: 100vh;
 	width: 100%;
@@ -71,7 +72,7 @@ p {
 	color: crimson;
 }
 
-
+/* Header section */
 #header {
 	position: fixed;
 	z-index: 1000;
@@ -114,14 +115,17 @@ p {
 	left: 0%;
 }
 #header .nav-list ul a {
-	font-size: 2.5rem;
+	font-size: 1.5rem;
 	font-weight: 500;
 	letter-spacing: .2rem;
 	text-decoration: none;
 	color: white;
 	text-transform: uppercase;
-	padding: 20px;
+	padding: 10px;
 	display: block;
+}
+#header li:nth-child(6)>a{
+    padding:0;
 }
 #header .nav-list ul a::after {
 	content: attr(data-after);
@@ -196,9 +200,19 @@ p {
 #header .hamburger.active .bar::after {
 	top: 0;
 }
+#m{
+    position: relative;
+}
+.user{
+    position: absolute;
 
+
+}
+/* End Header section */
+
+/* Hero Section */
 #hero {
-	background-image: url(images/Donation.png);
+	background-image: url(../images/Donation.png);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -260,7 +274,9 @@ p {
 	animation-delay: 2.5s;
 }
 
+/* End Hero Section */
 
+/* Services Section */
 #services .services {
 	flex-direction: column;
 	text-align: center;
@@ -287,7 +303,7 @@ p {
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 10px;
-	background-image: url(images/customers.jpg);
+	background-image: url(../images/customers.jpg);
 	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
@@ -319,7 +335,9 @@ p {
 	color: white;
 	text-align: left;
 }
+/* End Services Section */
 
+/* Projects section */
 #projects .projects {
 	flex-direction: column;
 	max-width: 1200px;
@@ -389,7 +407,9 @@ p {
 #projects .project-item:hover .project-img img {
 	transform: scale(1.1);
 }
+/* End Projects section */
 
+/* About Section */
 #about .about {
 	flex-direction: column-reverse;
 	text-align: center;
@@ -435,7 +455,9 @@ p {
 	border: 7px solid crimson;
 	z-index: -1;
 }
+/* End About Section */
 
+/* contact Section */
 #contact .contact {
 	flex-direction: column;
 	max-width: 1200px;
@@ -476,7 +498,9 @@ p {
 	line-height: 2rem;
 	font-weight: 500;
 }
+/*End contact Section */
 
+/* Footer */
 #footer {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
@@ -514,7 +538,9 @@ p {
 	color: white;
 	font-size: 1.3rem;
 }
+/* End Footer */
 
+/* Keyframes */
 @keyframes hamburger_puls {
 	0% {
 		opacity: 1;
@@ -546,7 +572,9 @@ p {
 		font-weight: 500;
 	}
 }
+/* End Keyframes */
 
+/* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
 	.cta {
 		font-size: 2.5rem;
@@ -556,16 +584,20 @@ p {
 		font-size: 6rem;
 	}
 
-	
+	/* Hero */
 	#hero h1 {
 		font-size: 7rem;
 	}
-	
+	/* End Hero */
+
+	/* Services Section */
 	#services .service-bottom .service-item {
 		flex-basis: 45%;
 		margin: 2.5%;
 	}
-	
+	/* End Services Section */
+
+	/* Project */
 	#projects .project-item {
 		flex-direction: row;
 	}
@@ -584,7 +616,9 @@ p {
 	#projects .all-projects .project-img {
 		height: 100%;
 	}
-	
+	/* End Project */
+
+	/* About */
 	#about .about {
 		flex-direction: row;
 	}
@@ -607,7 +641,9 @@ p {
 	#about .col-right h1 {
 		text-align: left;
 	}
+	/* End About */
 
+	/* contact  */
 	#contact .contact {
 		flex-direction: column;
 		padding: 100px 0;
@@ -639,11 +675,13 @@ p {
 		text-align: left;
 		padding-left: 20px;
 	}
-	
+	/* End contact  */
 }
+/* End Media Query For Tablet */
 
+/* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
-
+	/* header */
 	#header .hamburger {
 		display: none;
 	}
@@ -663,11 +701,11 @@ p {
 	#header .nav-list ul a:after {
 		display: none;
 	}
-
+	/* End header */
 
 	#services .service-bottom .service-item {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
 }
-
+/* End  Media Query For Desktop */

@@ -3,30 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+  <link rel="stylesheet" href="../style.css">
   <title>Helping Hands</title>
 </head>
 <body>
- 
+
   <section id="header">
-    <div class="header container">
+    <div class="header container" >
       <div class="nav-bar">
         <div class="brand">
-          <a href="../"><h1><span>H</span>elping <span>H</span>ands</h1></a>
+          <a href="accounthome.php"><h1><span>H</span>elping <span>H</span>ands</h1></a>
         </div>
         <div class="nav-list">
-          <div class="hamburger"><div class="bar"></div></div>
+          <div class="hamburger" ><div class="bar"></div></div>
           <ul>
-            <li><a href="index.html" data-after="Home">Home</a></li>
-            
-            <li><a href="src/charity.php" data-after="Charity">Do Charity</a></li>
-            <li><a href="src/login.php" data-after="Login">Login</a></li>
-            <li><a href="src/contactus.php" data-after="Contact Us">contact Us</a></li>
+            <li><a href="accounthome.php" data-after="Home">Home</a></li>
+            <li><a href="charity.php" data-after="Charity">Do Charity</a></li>
+            <li><a href="profile.php" data-after="Profile">Profile</a></li>
+            <li><a href="contactus.php" data-after="Contact Us">contact Us</a></li>
+            <li><a href="logout.php" data-after="Log Out">LogOut</a></li>
           </ul>
         </div>
       </div>
     </div>
   </section>
+ 
+
 
   <section id="hero">
     <div class="hero container">
@@ -34,14 +37,15 @@
         <h1>Small Effort<span></span></h1>
         <h1>Can Make <span></span></h1>
         <h1>Big Change <span></span></h1>
-        <a href="src/donate_us.html" type="button" class="cta">DONATE US</a>
+        <a href="userdonate.html" type="button" class="cta">DONATE US</a>
         <h1>Be a part of beautiful world</h1>
-        <a href="src/signup.php" type="button" class="cta">Be a Member</a> 
-      
+        <a href="#" type="button" class="cta">Welcome</a>
       </div>
     </div>
   </section>
 
+
+  
   <section id="services">
     <div class="services container">
       <div class="service-top">
@@ -72,7 +76,7 @@
       </div>
     </div>
   </section>
- 
+  
   <section id="projects">
     <div class="projects container">
       <div class="projects-header">
@@ -85,7 +89,7 @@
             <p>See how can u make a differences in families' lives with just some amout of your love</p>
           </div>
           <div class="project-img">
-            <img src="images/charity-donation.jpg" alt="img">
+            <img src="../images/charity-donation.jpg" alt="img">
           </div>
         </div>
         <div class="project-item">
@@ -94,7 +98,7 @@
             <p>Our support creates empowered communities in the world</p>
           </div>
           <div class="project-img">
-            <img src="images/volunteer.jpg" alt="img">
+            <img src="../images/volunteer.jpg" alt="img">
           </div>
         </div>
         <div class="project-item">
@@ -103,7 +107,7 @@
             <p>Do something crazy to raise money for clean water for childrens</p>
           </div>
           <div class="project-img">
-            <img src="images/save_earth.jpg" alt="img">
+            <img src="../images/save_earth.jpg" alt="img">
           </div>
         </div>
         <div class="project-item">
@@ -112,7 +116,7 @@
             <p>Love only grows by sharing. You can only have more for yourself by giving it away to others.</p>
           </div>
           <div class="project-img">
-            <img src="images/sharing-1.jpg" alt="img">
+            <img src="../images/sharing-1.jpg" alt="img">
           </div>
         </div>
       </div>
@@ -123,7 +127,7 @@
     <div class="about container">
       <div class="col-left">
         <div class="about-img">
-          <img src="images/about.jpg" alt="img">
+          <img src="../images/about.jpg" alt="img">
         </div>
       </div>
       <div class="col-right">
@@ -164,7 +168,7 @@
       </div>
     </div>
   </section>
-
-  <script src="js/nav.js"></script>
+  <script src="../js/nav.js"></script>
+  
 </body>
 </html>
